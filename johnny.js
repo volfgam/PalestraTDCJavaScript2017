@@ -54,7 +54,7 @@ app.get('/rele', function(req, res){
 board.on("ready", function () {
   // Create a new `photoresistor` hardware instance.
   photoresistor = new five.Sensor({
-    pin: "A13",
+    pin: "A14",
     freq: 250
   });
 
@@ -67,7 +67,7 @@ board.on("ready", function () {
   //Termometro
   var thermometer = new five.Thermometer({
     controller: "GROVE",
-    pin: "A14"
+    pin: "A12"
   });
 
   thermometer.on("data", function() {
